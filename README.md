@@ -1,0 +1,1 @@
+# folio-spring-module-archetype
