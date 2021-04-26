@@ -4,6 +4,11 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <!-- update sample-change-log.xml with real change sets and rename -->
-    <include file="changes/v1.0.0/sample-change-log.xml" relativeToChangelogFile="true"/>
+    <!-- Sample change set -->
+    <!--<changeSet id="MODQM-78@@create-pgcrypto-extension" author="johndoe">
+        <sql dbms="postgresql">
+            CREATE EXTENSION IF NOT EXISTS pgcrypto SCHEMA public;
+        </sql>
+    </changeSet>-->
+
 </databaseChangeLog>

@@ -37,6 +37,11 @@
       <!-- define sonar exclusions here -->
     </sonar.exclusions>
 
+    <!-- Sample API definition -->
+    <records-editor.yaml.file>
+      ${project.basedir}/src/main/resources/swagger.api/records-editor.yaml
+    </records-editor.yaml.file>
+
     <!-- Test properties-->
     <mockito.version>3.7.7</mockito.version>
     <rest-assured.version>4.3.3</rest-assured.version>

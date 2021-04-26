@@ -19,16 +19,45 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-  name="${artifactId}">
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+      name="folio-spring-module-archetype">
 
   <fileSets>
     <fileSet filtered="true" packaged="true">
       <directory>src/main/java</directory>
     </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/resources</directory>
+    </fileSet>
     <fileSet filtered="true" packaged="true">
       <directory>src/test/java</directory>
+    </fileSet>
+    <fileSet filtered="true">
+      <directory>src/test/resources</directory>
+    </fileSet>
+    <fileSet>
+      <directory>descriptors</directory>
+      <includes>
+        <include>**/*.json</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory/>
+      <includes>
+        <include>.editorconfig</include>
+        <include>.gitignore</include>
+        <include>CONTRIBUTING.md</include>
+        <include>Dockerfile</include>
+        <include>Jenkinsfile</include>
+        <include>LICENSE</include>
+        <include>lombok.config</include>
+        <include>PERSONAL_DATA_DISCLOSURE.md</include>
+        <include>pom.xml</include>
+        <include>PULL_REQUEST_TEMPLATE.md</include>
+        <include>README.md</include>
+      </includes>
     </fileSet>
   </fileSets>
 </archetype-descriptor>
