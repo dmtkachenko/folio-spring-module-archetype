@@ -24,6 +24,12 @@ under the License.
       xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
       name="folio-spring-module-archetype">
 
+  <requiredProperties>
+    <requiredProperty key="description">
+      <defaultValue>${artifactId}</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
   <fileSets>
     <fileSet filtered="true" packaged="true">
       <directory>src/main/java</directory>
@@ -54,8 +60,12 @@ under the License.
         <include>LICENSE</include>
         <include>lombok.config</include>
         <include>PERSONAL_DATA_DISCLOSURE.md</include>
-        <include>pom.xml</include>
         <include>PULL_REQUEST_TEMPLATE.md</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory/>
+      <includes>
         <include>README.md</include>
       </includes>
     </fileSet>
